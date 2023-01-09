@@ -2,12 +2,9 @@ from collections import deque
 
 queue = deque(input().split())
 n = int(input())
-removed = ""
 
 while len(queue) > 1:
-    for i in range(n):
-        removed = queue.popleft()
-        if i < n - 1:
-            queue.append(removed)
-    print(f"Removed {removed}")
+    for i in range(n - 1):
+        queue.append(queue.popleft())
+    print(f"Removed {queue.popleft()}")
 print(f"Last is {(queue.popleft())}")
