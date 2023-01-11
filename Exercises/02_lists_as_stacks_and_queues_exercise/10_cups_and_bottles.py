@@ -5,8 +5,7 @@ bottles = list(map(int, input().split()))
 wasted = 0
 
 while cups and bottles:
-    bottle_amount = bottles.pop()
-    cups[0] -= bottle_amount
+    cups[0] -= bottles.pop()
     if cups[0] <= 0:
         wasted += abs(cups[0])
         cups.popleft()
