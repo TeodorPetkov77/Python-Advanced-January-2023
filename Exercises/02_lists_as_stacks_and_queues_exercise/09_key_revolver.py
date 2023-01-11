@@ -23,7 +23,6 @@ while bullets and locks:
         if bullets:
             print("Reloading!")
 
-
 total_earned = intelligence_value - bullet_cost
 
 if (bullets and not locks) or (not bullets and not locks):
