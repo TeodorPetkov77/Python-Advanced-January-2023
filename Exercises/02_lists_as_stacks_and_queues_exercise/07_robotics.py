@@ -46,7 +46,6 @@ def robot_work(available_robots_f, products_f):
 
 
 command = input()
-
 while command != "End":
     products.append(command)
     command = input()
