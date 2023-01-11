@@ -26,11 +26,11 @@ def print_clock(hours_f, minutes_f, seconds_f):
     return f"[{hours_f:02d}:{minutes_f:02d}:{seconds_f:02d}]"
 
 
-def robot_recharge(available: list):
-    for robot_f in available:
+def robot_recharge(available_robots_f: list):
+    for robot_f in available_robots_f:
         if robot_f[1] > robot_f[2]:
             robot_f[2] += 1
-    return available
+    return available_robots_f
 
 
 def robot_work(available_robots_f, products_f):
