@@ -33,6 +33,18 @@ def robot_recharge(available: list):
     return available
 
 
+def robot_work(available_robots_f, products_f):
+    for robot in available_robots_f:
+        if robot[1] == robot[2]:
+            robot[2] = 0
+            print(f"{robot[0]} - {products_f.popleft()} "
+                  f"{print_clock(hours, minutes, seconds)}")
+            break
+    else:
+        products.append(products.popleft())
+    return available_robots_f, products_f
+
+
 command = input()
 
 while command != "End":
@@ -43,14 +55,7 @@ while products:
     seconds += 1
     hours, minutes, seconds = clock(hours, minutes, seconds)
     available_robots = robot_recharge(available_robots)
-    for robot in available_robots:
-        if robot[1] == robot[2]:
-            robot[2] = 0
-            print(f"{robot[0]} - {products.popleft()} "
-                  f"{print_clock(hours, minutes, seconds)}")
-            break
-    else:
-        products.append(products.popleft())
+    available_robots, products = robot_work(available_robots, products)
 
 # https://judge.softuni.org/Contests/Compete/Index/1831#6
 
