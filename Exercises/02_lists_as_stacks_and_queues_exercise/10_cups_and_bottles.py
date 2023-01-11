@@ -55,4 +55,4 @@ print(f"Wasted litters of water: {wasted}")
 # Wasted litters of water: 35
 # 10 20 30 40 50
 # 20 11	Cups: 30 40 50
-# Wasted litters of water: 1	
+# Wasted litters of water: 1
