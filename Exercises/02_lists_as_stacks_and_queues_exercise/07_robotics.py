@@ -6,7 +6,6 @@ for bot in input().split(";"):
     name, work_time = bot.split("-")
     available_robots.append([name, int(work_time), int(work_time)])
 
-
 hours, minutes, seconds = list(map(int, input().split(":")))
 products = deque([])
 
