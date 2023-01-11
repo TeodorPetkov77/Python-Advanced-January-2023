@@ -1,6 +1,6 @@
 from collections import deque
 
-available_robots = deque([])
+available_robots = []
 
 for bot in input().split(";"):
     name, work_time = bot.split("-")
