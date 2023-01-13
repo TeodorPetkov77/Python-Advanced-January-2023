@@ -43,4 +43,4 @@ elif sum(even_set) > sum(odd_set):
 # Ivan
 # Stamat
 # Pesho
-# Stefan	733, 101	
+# Stefan	733, 101
