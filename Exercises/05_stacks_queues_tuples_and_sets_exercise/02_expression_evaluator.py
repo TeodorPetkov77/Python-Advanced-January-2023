@@ -3,7 +3,6 @@ import math
 
 
 def divide(numbers_f: list):
-    result = 0
     if len(numbers_f) > 1:
         result = numbers_f[0]
         for num in range(1, len(numbers_f)):
@@ -14,7 +13,6 @@ def divide(numbers_f: list):
 
 
 def multiply(numbers_f: list):
-    result = 0
     if len(numbers_f) > 1:
         result = numbers_f[0]
         for num in range(1, len(numbers_f)):
@@ -25,7 +23,6 @@ def multiply(numbers_f: list):
 
 
 def subtract(numbers_f: list):
-    result = 0
     if len(numbers_f) > 1:
         result = numbers_f[0]
         for num in range(1, len(numbers_f)):
