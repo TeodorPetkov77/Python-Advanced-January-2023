@@ -2,36 +2,36 @@ from collections import deque
 import math
 
 
-def divide(numbers: list):
+def divide(numbers_f: list):
     result = 0
-    if len(numbers) > 1:
-        result = numbers[0]
-        for num in range(1, len(numbers)):
-            result /= numbers[num]
+    if len(numbers_f) > 1:
+        result = numbers_f[0]
+        for num in range(1, len(numbers_f)):
+            result /= numbers_f[num]
     else:
-        result = numbers[0]
+        result = numbers_f[0]
     return math.floor(result)
 
 
-def multiply(numbers: list):
+def multiply(numbers_f: list):
     result = 0
-    if len(numbers) > 1:
-        result = numbers[0]
-        for num in range(1, len(numbers)):
-            result *= numbers[num]
+    if len(numbers_f) > 1:
+        result = numbers_f[0]
+        for num in range(1, len(numbers_f)):
+            result *= numbers_f[num]
     else:
-        result = numbers[0]
+        result = numbers_f[0]
     return result
 
 
-def subtract(numbers: list):
+def subtract(numbers_f: list):
     result = 0
-    if len(numbers) > 1:
-        result = numbers[0]
-        for num in range(1, len(numbers)):
-            result -= numbers[num]
+    if len(numbers_f) > 1:
+        result = numbers_f[0]
+        for num in range(1, len(numbers_f)):
+            result -= numbers_f[num]
     else:
-        result = numbers[0]
+        result = numbers_f[0]
     return result
 
 
