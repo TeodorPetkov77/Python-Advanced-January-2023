@@ -105,4 +105,4 @@ if magic_levels:
 # 15 10 5 0 10	No presents this Christmas!
 # Magic left: 5, 0, 10
 # Doll: 1
-# Teddy bear: 1	
+# Teddy bear: 1
