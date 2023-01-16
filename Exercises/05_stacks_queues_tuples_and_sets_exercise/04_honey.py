@@ -5,10 +5,10 @@ nectars = deque(list(map(int, input().split())))
 symbols = deque(input().split())
 total = 0
 
-while nectars and bees and symbols:
+while nectars and bees:
     bee = bees[0]
     nectar = nectars[-1]
-    if bee > nectar and nectars:
+    if bees[0] > nectars[-1] and nectars:
         nectars.pop()
         continue
     symbol = symbols.popleft()
