@@ -5,26 +5,15 @@ def bunny_multiply(matrix_f):
     for row_f in range(len(matrix_f)):
         for col_f in range(len(matrix_f[row_f])):
             if matrix_f[row_f][col_f] == "B":
-                up = (row_f - 1, col_f)
-                down = (row_f + 1, col_f)
-                left = (row_f, col_f - 1)
-                right = (row_f, col_f + 1)
-                if up[0] in range(len(matrix_f)) and \
-                        up[1] in range(len(matrix_f[row_f])):
-                    if matrix_f[up[0]][up[1]] != "B":
-                        matrix_f[up[0]][up[1]] = "R"
-                if down[0] in range(len(matrix_f)) and \
-                        down[1] in range(len(matrix_f[row_f])):
-                    if matrix_f[down[0]][down[1]] != "B":
-                        matrix_f[down[0]][down[1]] = "R"
-                if left[0] in range(len(matrix_f)) and \
-                        left[1] in range(len(matrix_f[row_f])):
-                    if matrix_f[left[0]][left[1]] != "B":
-                        matrix_f[left[0]][left[1]] = "R"
-                if right[0] in range(len(matrix_f)) and \
-                        right[1] in range(len(matrix_f[row_f])):
-                    if matrix_f[right[0]][right[1]] != "B":
-                        matrix_f[right[0]][right[1]] = "R"
+                directions_f = {"up": (row_f - 1, col_f),
+                                "down": (row_f + 1, col_f),
+                                "left": (row_f, col_f - 1),
+                                "right": (row_f, col_f + 1)}
+                for direction, positions in directions_f.items():
+                    if positions[0] in range((len(matrix_f))) \
+                            and positions[1] in range((len(matrix_f[row_f]))):
+                        if matrix_f[positions[0]][positions[1]] != "B":
+                            matrix_f[positions[0]][positions[1]] = "R"
     matrix_f = [['B' if cell == 'R' else cell for cell in row_c] for row_c in matrix]
     return matrix_f
 
