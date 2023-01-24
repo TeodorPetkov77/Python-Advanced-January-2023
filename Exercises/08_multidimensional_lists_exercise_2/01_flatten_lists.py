@@ -1,5 +1,4 @@
-string_input = input()
-matrix = [x.split() for x in string_input.split("|")]
+matrix = [x.split() for x in input().split("|")]
 [print(" ".join(matrix[x]), end=" ") for x in range(len(matrix)-1, -1, -1) if matrix[x]]
 
 # https://judge.softuni.org/Contests/Compete/Index/3194#0
