@@ -31,7 +31,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/Programming/Python Advanced/Python-Advanced-January-2023/Exercises/10_functions_advanced_exercise",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -43,6 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674726372265</updated>
       <workItem from="1674726377055" duration="667000" />
+      <workItem from="1674829850873" duration="18000" />
     </task>
     <servers />
   </component>
