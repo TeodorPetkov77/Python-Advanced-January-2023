@@ -11,7 +11,7 @@ def math_operations(*args, **kwargs):
         "d": lambda x, y: y / x,
         "m": lambda x, y: y * x,
     }
-    
+
     while numbers_list:
         number = numbers_list.popleft()
         operator = operators.popleft()
