@@ -3,38 +3,29 @@ from collections import deque
 
 def math_operations(*args, **kwargs):
     numbers_list = deque(list(args))
+    operators = deque(kwargs.keys())
 
-    def add(num1, num2):
-        return float(num1 + num2)
-
-    def subtract(num1, num2):
-        return float(num2 - num1)
-
-    def divide(num1, num2):
-        return float(num2 / num1)
-
-    def multiply(num1, num2):
-        return float(num1 * num2)
-
-    operators = deque(["+", "-", "/", "*"])
+    operator_fuctions = {
+        "a": lambda x, y: y + x,
+        "s": lambda x, y: y - x,
+        "d": lambda x, y: y / x,
+        "m": lambda x, y: y * x,
+    }
+    
     while numbers_list:
         number = numbers_list.popleft()
         operator = operators.popleft()
         operators.append(operator)
-        if operator == "+":
-            kwargs["a"] = add(number, kwargs["a"])
-        elif operator == "-":
-            kwargs["s"] = subtract(number, kwargs["s"])
-        elif operator == "/":
-            if kwargs["d"] != 0 and number != 0:
-                kwargs["d"] = divide(number, kwargs["d"])
-        elif operator == "*":
-            kwargs["m"] = multiply(number, kwargs["m"])
+        if operator == "d" and (kwargs[operator] == 0 or number == 0):
+            continue
+        kwargs[operator] = operator_fuctions[operator](number, kwargs[operator])
+
     sorted_results = sorted(kwargs.items(), key=lambda x: (-x[1], x[0]))
     result = []
     for key, value in sorted_results:
         result.append(f"{key}: {value:.1f}")
     return "\n".join(result)
+
 
 # https://judge.softuni.org/Contests/Compete/Index/1839#10
 

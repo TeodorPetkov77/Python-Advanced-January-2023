@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8460a7e0-6793-4550-9b77-83b2bc2d1e0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_recursion_palindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/09_recursion_palindrome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_fill_the_box.py" beforeDir="false" afterPath="$PROJECT_DIR$/10_fill_the_box.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/11_math_operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_math_operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise Docs/~$. Functions Advanced - Exercise.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +176,9 @@
       <workItem from="1674829850873" duration="7060000" />
       <workItem from="1674905173029" duration="5000000" />
       <workItem from="1674912308938" duration="116000" />
-      <workItem from="1674912455623" duration="5465000" />
+      <workItem from="1674912455623" duration="5897000" />
+      <workItem from="1674918488505" duration="1000" />
+      <workItem from="1674918630763" duration="391000" />
     </task>
     <servers />
   </component>
