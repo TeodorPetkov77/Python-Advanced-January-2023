@@ -7,6 +7,6 @@ except FileNotFoundError:
 
 # 1.	File Opener
 # You are given a file called text.txt with the following text:
-#  This is some random line
+# This is some random line
 # This is the second line
 # And this is the third one
