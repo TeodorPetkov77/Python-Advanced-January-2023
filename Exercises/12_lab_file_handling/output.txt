@@ -1,3 +1,6 @@
-is - 3
-quick - 2
-fault - 1
+Wizards - 4
+them - 4
+community - 3
+turns - 2
+based - 2
+most - 1

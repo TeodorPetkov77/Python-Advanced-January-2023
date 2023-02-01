@@ -4,7 +4,7 @@ pattern = re.compile(r'[A-Za-z\']+')
 with open('input.txt', 'r') as file:
     list_of_words = [x.casefold() for x in re.findall(pattern, "".join(file.readlines()))]
 with open('words.txt', 'r') as file:
-    word_count_dict = {word: list_of_words.count(word) for word in file.read().split()}
+    word_count_dict = {word: list_of_words.count(word.casefold()) for word in file.read().split()}
 with open('output.txt', 'w') as file:
     for word, count in sorted(word_count_dict.items(), key=lambda x: -x[1]):
         file.write(f"{word} - {count}\n")

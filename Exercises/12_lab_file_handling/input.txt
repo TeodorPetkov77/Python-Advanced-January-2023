@@ -1,3 +1,47 @@
--I was quick to judge him, but it wasn't his fault.
--Is this some kind of joke?! Is it?
--Quick, hide here…It is safer.
+Dungeons & Dragons has walked back its huge OGL mistake, but the damage is already done
+By Robin Valentine published about 2 hours ago
+Wizards of the Coast's historic screw-up has changed the future of the entire tabletop RPG hobby
+
+COMMENTS
+An undead wizard with a collection of books.
+(Image credit: Wizards of the Coast)
+Last week, I wrote that Dungeons & Dragons' OGL wasn't worth fighting for. While I stand by the concerns I have about Wizards of the Coast's stranglehold on the market, and my apprehensive feelings about the overall effect of the OGL, there's clearly one thing I didn't anticipate: that just a few days later, WOTC would completely and utterly fold on the issue. I predicted a protracted and probably unwinnable fight between the company and its customers—instead, WOTC has apologised, backed away completely from the OGL, and even released the latest version of the D&D 5e rules under a Creative Commons license.
+
+It's one of the most dramatic U-turns in corporate history, and a complete and total victory for those who vehemently opposed the proposed OGL changes—which was, as it turns out, the entire D&D community. But where does it actually leave us?
+
+The Dungeons & Dragons OGL story in brief
+ For over 20 years, the Open Gaming License has allowed other companies to make D&D-based products freely.
+ Wizards of the Coast tried to introduce a new OGL that gave them royalties and greater control, and revoke the old one.
+ The community reaction was so universally negative that WOTC ended up having to completely abandon the idea.
+ WOTC is leaving the original OGL in place and also releasing the latest version of the D&D 5e rules under a Creative Commons license.
+A group of adventurers battle a dragon.
+
+What's WOTC's next move?
+When WOTC made its advance on the OGL, it had a specific goal in mind—taking greater control over the huge third-party D&D market—but it was also showing its hand in a wider sense. It's absolutely fine to enjoy a victory well won, but this will not be the last time it tries some bullshit. As long as players and publishers are tied to D&D, they're vulnerable to WOTC's decision-making—and we've now seen a clear sign that that decision-making can have some pretty repugnant thinking behind it.
+
+WOTC, and perhaps more importantly its parent company Hasbro, seem to be probing at ways to dramatically increase the game's already significant profitability. This latest attempt at overreach is likely only the beginning—the battle has been won, but I suspect there's a war ahead.
+
+Currently in development is One D&D—a new version of the game that pushes aside the convention of 'editions' in favour of something that seems more inspired by live service videogames. "One D&D will take what we love from fifth edition and create an experience that is not only backwards compatible with the adventures and supplements you enjoy today but that will evolve the game for years to come," says the official pitch, while emphasising the role of both D&D Beyond (a subscription-based site that automates many elements of play) and a new, so far unnamed virtual tabletop.
+
+A dragon breathing fire on people below.
+
+This version of the game was announced in August last year, and it can be presumed it's been in development for some time before that. Which means it has been created alongside the now-abandoned OGL plans. I think it would be wise to be cautious about what kind of future One D&D may represent—it's not exactly a leap to assume it's part of the same philosophy of finding new ways to push the monetisation and market share of the game.
+
+An obvious move would be to find ways to get more profit out of D&D Beyond. The service already offers a premium subscription and the equivalent of microtransactions to access book content, but rumours have been swirling about a major increase in the subscription cost, and a plan to increase its reach by integrating AI DMs. Whether that's true or not, it's not hard to imagine WOTC seeing the near-ubiquity of the service in modern D&D as an opportunity to be exploited more thoroughly.
+
+A sorcerer casting a complicated spell.
+
+The new virtual tabletop will offer similar possibilities if WOTC can secure its position in the market. That's where things could get ugly—suddenly, it will be in the company's interests to push against popular third-party VTTs like Roll20, Foundry and Owlbear Rodeo. I suspect that process has already begun—the originally proposed changes to the OGL explicitly mentioned VTTs as being subject to the new restrictions, a clause that could have been used to severely hamper the competition. That's off the table now, but WOTC still has plenty of unsavoury options it could pursue—it would be a huge blow to Roll20, for example, if WOTC withdrew its products from the platform's marketplace.
+
+Of course, I can only speculate at this stage—and maybe my speculation is cynical. But I do think that at the very least, the trust WOTC burned in the last few weeks between it and its community should not be easily restored. Make them work to win you back over. The OGL drama is the game's biggest PR disaster ever, and that will have shaken even a Hasbro executive's confidence, but if the players forgive too easily and too quickly, that will embolden WOTC to try something else.
+
+A column of soldiers riding out from a castle.
+
+The future of the hobby
+Certainly, the third-party publishers shaken by the whole affair seem to be maintaining the new distance between them and WOTC. Plans made on the assumption that the new OGL would be forced through aren't being abandoned now that the drama's over—the new push for greater independence seems to have as much momentum as ever. From Cubicle 7 (publisher of the official Warhammer RPGs as well as D&D content) continuing with plans to create its own new D&D-compatible system for its books, to major third-party D&D publisher Kobold Press declaring "No white flag!" over its plans to similarly create its own new game, to Pathfinder creator Paizo remaining bullish about its rival license and huge alliance of other RPG companies, there's a sea change here that won't be undone by any corporate apology. And it seems to be backed up by players, who are reportedly flocking to new games—so much so that Chaosium, creators of Call of Cthulhu, claims it's been cleared out of stock.
+
+Investigators in a house with Lovecraftian tentacles emerging around them.
+
+Does that mean we're on the cusp of D&D's near-monopoly on the market being broken? Well, no, and I still have the same concerns that, for all the benefits the original OGL carries, its continued existence plays a huge part in maintaining D&D's overwhelming dominance. This U-turn from WOTC is a victory for many, but it does ensure to some degree the continuation of a status quo that stifles independence and creativity in the wider tabletop space.
+
+But even if D&D's grip is still strong, it has at least been loosened a little, for the first time since fourth edition. The invulnerable dragon has been poked in the eye and lost some treasures from its hoard, and the fringes on which other TTRPG creators exist have widened a little. If we know anything about that lot, it's that they can achieve amazing things with only a tiny bit of wiggle room. WOTC's grand screw-up will go down in tabletop history—and, even after the dramatic reversal, it looks like it's still planted the seed of a more diverse and interesting future for the hobby.
