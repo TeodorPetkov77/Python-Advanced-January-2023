@@ -46,7 +46,8 @@ while command != 'End':
     command = input()
 
 
-# Keep in mind that the file may not appear or disappear in the Project tab immediately upon executing a command. Open the folder and check there.
+# Keep in mind that the file may not appear or disappear in the Project tab
+# immediately upon executing a command. Open the folder and check there.
 
 
 # 3.	File Manipulator

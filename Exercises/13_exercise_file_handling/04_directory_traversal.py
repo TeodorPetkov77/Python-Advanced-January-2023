@@ -1,0 +1,42 @@
+import os
+from os.path import isfile, join
+
+# Import isfile and join to allow work only with files and not dirs.
+# join is a smart way to automatically join the path to the file with the file,
+# since I wanted to work with a directory that's not the current one.
+
+dir_name = '04_directory_traversal_dir'
+all_file_names = [x for x in os.listdir(dir_name) if isfile(join(dir_name, x))]
+file_dict = {}
+
+# Create a list with only file names and an empty dictionary to fill later.
+
+for file in all_file_names:
+    extension = file.split(".")[1]
+    name = file.split(".")[0]
+    if extension not in file_dict:
+        file_dict[extension] = []
+    file_dict[extension].append(file)
+
+# Fill in the dictionary with extensions as keys and list of files under each ext.
+
+with open("report.txt", "w") as report:
+    report.write("")
+
+# Create empty file with "w" in order to reset it and delete the data
+# every time the program is run.
+
+for extension, files in sorted(file_dict.items()):
+    with open("report.txt", "a") as report:
+        report.write(f".{extension}\n")
+    for file in files:
+        with open("report.txt", "a") as report:
+            report.write(f"- - - {file}\n")
+
+
+# Fill in the data by going through the sorted dictionary.
+
+# The program is meant to work with the files in "04_directory_traversal_dir".
+
+
+#
