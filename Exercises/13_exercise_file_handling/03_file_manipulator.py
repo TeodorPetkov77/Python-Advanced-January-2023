@@ -33,7 +33,10 @@ def file_manipulator(command_f: list):
         'Replace': replace,
         'Delete': delete
     }
-    commands[action]()
+    try:
+        commands[action]()
+    except KeyError:
+        print("Invalid action. Please select Create, Add, Replace or Delete")
 
 
 command = input()
