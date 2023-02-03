@@ -1,10 +1,16 @@
 symbols = ["-", ",", ".", "!", "?", "'", ";", ":", "(", ")"]
 file_name = 'text.txt'
 text_to_append = ""
+
+with open("output.txt", 'w') as output:
+    output.write("")
+
+# Creates an empty file with "w" in order to reset it and delete the data every time the program is run.
+
 with open(file_name, 'r') as file:
     for line, sentence in enumerate(file.read().split('\n')):
-        with open("output.txt", 'a') as file_2:
-            file_2.write(f"Line {line + 1}: {sentence} "
+        with open("output.txt", 'a') as output:
+            output.write(f"Line {line + 1}: {sentence} "
                          f"({len([x for x in list(sentence) if x.isalpha()])})"
                          f"({len([x for x in list(sentence) if x in symbols])})\n")
 

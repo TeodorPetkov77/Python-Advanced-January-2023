@@ -23,8 +23,7 @@ for file in all_file_names:
 with open("report.txt", "w") as report:
     report.write("")
 
-# Create empty file with "w" in order to reset it and delete the data
-# every time the program is run.
+# Creates an empty file with "w" in order to reset it and delete the data every time the program is run.
 
 for extension, files in sorted(file_dict.items()):
     with open("report.txt", "a") as report:
