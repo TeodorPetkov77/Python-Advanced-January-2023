@@ -10,15 +10,3 @@
 .txt
 - - - log.txt
 - - - notes.txt
-.html
-- - - index.html
-.js
-- - - index.js
-.pptx
-- - - demo.pptx
-.py
-- - - program.py
-- - - python.py
-.txt
-- - - log.txt
-- - - notes.txt
