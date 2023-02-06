@@ -14,12 +14,11 @@ daily_portions = list(map(int, input().split(", ")))
 daily_staminas = deque(list(map(int, input().split(", "))))
 
 for _ in range(7):
-    portion = daily_portions.pop() if daily_portions else 0
-    stamina = daily_staminas.popleft() if daily_staminas else 0
+    portion = daily_portions.pop()
+    stamina = daily_staminas.popleft()
     total_portion_stamina = portion + stamina
     if total_portion_stamina >= mountain_peaks[0][1]:
-        climbed_peaks.append(mountain_peaks[0][0])
-        mountain_peaks.popleft()
+        climbed_peaks.append(mountain_peaks.popleft()[0])
         if not mountain_peaks:
             print("Alex did it! He climbed all top five Pirin "
                   "peaks in one week -> @FIVEinAWEEK")
