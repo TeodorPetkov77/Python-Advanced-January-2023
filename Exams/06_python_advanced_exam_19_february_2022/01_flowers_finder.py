@@ -1,15 +1,5 @@
 from collections import deque
 
-words_dict = {
-    "rose": "rose",
-    "lotus": "lotus",
-    "daffodil": "daffodil",
-    "tulip": "tulip"
-}
-vowels = deque(input().split())
-consonants = input().split()
-word_found = False
-
 
 def check_word(words_dict_f, vowel_f, consonant_f, word_found_f):
     for key, value in words_dict_f.items():
@@ -20,6 +10,19 @@ def check_word(words_dict_f, vowel_f, consonant_f, word_found_f):
             print(f"Word found: {key}")
             break
     return words_dict_f, word_found_f
+
+
+words_dict = {
+    "rose": "rose",
+    "lotus": "lotus",
+    "daffodil": "daffodil",
+    "tulip": "tulip"
+}
+vowels = deque(input().split())
+consonants = input().split()
+
+
+word_found = False
 
 
 while vowels and consonants and not word_found:

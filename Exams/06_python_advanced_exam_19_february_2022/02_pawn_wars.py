@@ -1,10 +1,3 @@
-matrix = [input().split() for x in range(8)]
-white_win = False
-white_queen = False
-black_win = False
-black_queen = False
-
-
 def locate_white(matrix_f):
     for row_f in range(len(matrix_f)):
         for col_f in range(len(matrix_f)):
@@ -39,6 +32,15 @@ def move_black(row_b_f, col_b_f, row_w_f, col_w_f, black_win_f, black_queen_f):
     else:
         row_b_f += 1
     return row_b_f, col_b_f, black_win_f, black_queen_f
+
+
+matrix = [input().split() for x in range(8)]
+white_win = False
+white_queen = False
+black_win = False
+
+
+black_queen = False
 
 
 row_w, col_w = locate_white(matrix)
