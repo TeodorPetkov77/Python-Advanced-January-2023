@@ -86,7 +86,6 @@ def gameplay():
             print(figlet.renderText("GAME OVER"))
             figlet = Figlet(font='big')
             print(figlet.renderText(f"{players[0][0]} Wins!\n"))
-            print(f"\n{players[0][0]} Wins!!!\n")
             break
         if not check_for_draw():
             figlet = Figlet(font='poison')
@@ -97,7 +96,7 @@ def gameplay():
 
         print_board()
         next_player()
-        
+
     print("Final state of the game:")
     print_board()
 
@@ -128,23 +127,30 @@ def create_matrix():
 
 
 def define_name_and_rules():
-    player_1_f = input("Player 1, please state your name: ")
-    player_1_symbol_f = player_1_f[0].upper()
-
+    while True:
+        player_1_f = input("Player 1, please state your name: ")
+        if len(player_1_f) == 0:
+            print("Name cannot be blank.")
+            continue
+        player_1_symbol_f = player_1_f[0].upper()
+        break
     while True:
         player_2_f = input("Player 2, please state your name: ")
+        if len(player_2_f) == 0:
+            print("Name cannot be blank.")
+            continue
         if player_1_f == player_2_f:
             print("Name already taken.")
             continue
         player_2_symbol_f = player_2_f[0].upper()
         while player_2_symbol_f == player_1_symbol_f:
-            answer = input(f"Your symbol matches {player_1_f}'s symbol - '{player_1_symbol_f}'. "
-                           f"Would you like to change it to something else? (Y/N): ").upper()
-            if answer == "Y":
+            answer_f = input(f"Your symbol matches {player_1_f}'s symbol - '{player_1_symbol_f}'. "
+                             f"Would you like to change it to something else? (Y/N): ").upper()
+            if answer_f == "Y":
                 player_2_symbol_f = input("Choose your own symbol (Must be 1 character long): ").upper()
                 while len(player_2_symbol_f) != 1:
                     player_2_symbol_f = input("Symbol must be 1 character long: ").upper()
-            elif answer == "N":
+            elif answer_f == "N":
                 print("Continuing with your current symbol.")
                 break
         break
@@ -165,18 +171,26 @@ def start_game():
     print()
     figlet = Figlet(font='big')
     print(figlet.renderText("GAME START!"))
-    while True:
-        gameplay()
-        answer = input("Would you like to play again? (Y/N): ").upper()
-        while answer not in ["Y", "N"]:
-            answer = input("Sorry didn't quite catch that. Play again? (Y/N): ").upper()
-        if answer == "Y":
-            continue
-        else:
-            break
+    gameplay()
 
 
 board = create_matrix()
 player_1, player_2, player_1_symbol, player_2_symbol, combination, players = define_name_and_rules()
-start_game()
 
+while True:
+    start_game()
+    answer = input("Would you like to play again? (Y/N): ").upper()
+    while answer not in ["Y", "N"]:
+        answer = input("Sorry didn't quite catch that. Play again? (Y/N): ").upper()
+    if answer == "Y":
+        answer = input("Would you like to reconfigure the names and rules?(Y/N): ").upper()
+        while answer not in ["Y", "N"]:
+            answer = input("Sorry didn't quite catch that. Reconfigure the names and rules?? (Y/N): ").upper()
+        if answer == "Y":
+            board = create_matrix()
+            player_1, player_2, player_1_symbol, player_2_symbol, combination, players = define_name_and_rules()
+        elif answer == "N":
+            print("Continuing with current configuration.")
+        continue
+    elif answer == "N":
+        break
