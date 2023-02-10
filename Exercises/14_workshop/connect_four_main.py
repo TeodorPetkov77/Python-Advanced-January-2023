@@ -62,9 +62,8 @@ def next_player():
 
 
 def print_board():
-    print()
-    [print(x) for x in board]
-    print()
+    print(f"\n{[print(x) for x in board]}\n")
+
 
 
 def gameplay():
