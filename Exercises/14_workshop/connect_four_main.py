@@ -75,9 +75,7 @@ def gameplay():
         else:
             board[row][chosen_column] = players[0][1]
         if check_for_win(row, chosen_column) == combination:
-            print()
-            print(f"{players[0][0]} Wins!!!")
-            print()
+            print(f"\n{players[0][0]} Wins!!!\n")
             print("Final state of the game:")
             print_board()
             break
