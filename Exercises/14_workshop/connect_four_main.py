@@ -2,6 +2,11 @@ from collections import deque
 from pyfiglet import Figlet
 
 
+def check_for_draw():
+    list_of_o = [[x for x in row if x == "0"] for row in board]
+    return list_of_o
+
+
 def check_for_win(row, col):
     look_for = players[0][1]
 
@@ -78,11 +83,14 @@ def gameplay():
             board[row][chosen_column] = players[0][1]
         if check_for_win(row, chosen_column) == combination:
             print(f"\n{players[0][0]} Wins!!!\n")
-            print("Final state of the game:")
-            print_board()
+            break
+        if not check_for_draw():
+            print("Draw! No one wins.")
             break
         print_board()
         next_player()
+    print("Final state of the game:")
+    print_board()
 
 
 def choose_column_func():
@@ -122,7 +130,7 @@ def define_name_and_rules():
         player_2_symbol_f = player_2_f[0]
         while player_2_symbol_f == player_1_symbol_f:
             answer = input(f"Your symbol matches {player_1_f}'s symbol - '{player_1_symbol_f}'. "
-                           f"Would you like to change it to something else? Enter Y or N: ").upper()
+                           f"Would you like to change it to something else? (Y/N): ").upper()
             if answer == "Y":
                 player_2_symbol_f = input("Choose your own symbol (Must be 1 character long): ")
                 while len(player_2_symbol_f) != 1:
@@ -151,9 +159,9 @@ def start_game():
     answer = ""
     while True:
         gameplay()
-        answer = input("Would you like to play again? Enter Y or N: ").upper()
+        answer = input("Would you like to play again? (Y/N): ").upper()
         while answer not in ["Y", "N"]:
-            answer = input("Sorry didn't quite catch that.")
+            answer = input("Sorry didn't quite catch that. Play again? (Y/N): ").upper()
         if answer == "Y":
             continue
         else:
