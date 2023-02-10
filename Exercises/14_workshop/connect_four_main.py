@@ -97,6 +97,7 @@ def gameplay():
 
         print_board()
         next_player()
+        
     print("Final state of the game:")
     print_board()
 
