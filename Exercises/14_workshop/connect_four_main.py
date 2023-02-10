@@ -6,12 +6,14 @@ def check_for_win(row, col):
     look_for = players[0][1]
 
     def check_horizontal():
-        symbols = len([x for x in board[row] if x == look_for])
-        return symbols
+        if look_for * combination in "".join([x for x in board[row]]):
+            return combination
+        return 0
 
     def check_vertical():
-        symbols = len([board[r][col] for r in range(len(board)) if board[r][col] == look_for])
-        return symbols
+        if look_for * combination in "".join([board[r][col] for r in range(len(board))]):
+            return combination
+        return 0
 
     def check_diagonal_1(row_f, col_f):
         symbols = 0
