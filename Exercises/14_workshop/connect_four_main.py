@@ -24,7 +24,7 @@ def check_for_win(row, col):
             row_f -= 1
             col_f += 1
             if row_f in range(len(board)) and col_f in range(len(board[0])):
-                if board[row_f][col_f] == players[0][1]:
+                if board[row_f][col_f] == look_for:
                     symbols += 1
             else:
                 break
@@ -41,7 +41,7 @@ def check_for_win(row, col):
             row_f += 1
             col_f += 1
             if row_f in range(len(board)) and col_f in range(len(board[0])):
-                if board[row_f][col_f] == players[0][1]:
+                if board[row_f][col_f] == look_for:
                     symbols += 1
             else:
                 break
