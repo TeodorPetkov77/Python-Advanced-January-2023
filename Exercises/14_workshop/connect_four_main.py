@@ -190,6 +190,5 @@ while True:
             player_1, player_2, player_1_symbol, player_2_symbol, combination, players = define_name_and_rules()
         elif answer == "N":
             print("Continuing with current configuration.")
-        continue
     elif answer == "N":
         break
