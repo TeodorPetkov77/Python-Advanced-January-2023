@@ -143,8 +143,9 @@ def define_name_and_rules():
 
 
 def start_game():
+    print()
     figlet = Figlet(font='alligator')
-    print(figlet.renderText("Lets go!"))
+    print(figlet.renderText("Game start!"))
     answer = ""
     while True:
         gameplay()
@@ -155,6 +156,7 @@ def start_game():
             continue
         else:
             print("Game over.")
+            break
 
 
 board = create_matrix()
