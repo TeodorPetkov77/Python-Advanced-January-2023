@@ -67,7 +67,7 @@ def gameplay():
         chosen_column = choose_column_func() - 1
         row = 0
         if board[row][chosen_column] != "0":
-            print(f"Column № {chosen_column} is full.")
+            print(f"Column № {chosen_column + 1} is full.")
             continue
         for row in (range(len(board))):
             if board[row][chosen_column] != "0":
@@ -157,7 +157,8 @@ def start_game():
         if answer == "Y":
             continue
         else:
-            print("Game over.")
+            figlet = Figlet(font='poison')
+            print(figlet.renderText("GAME OVER"))
             break
 
 
