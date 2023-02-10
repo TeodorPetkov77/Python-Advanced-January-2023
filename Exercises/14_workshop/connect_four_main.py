@@ -124,7 +124,9 @@ def define_name_and_rules():
             answer = input(f"Your symbol matches {player_1_f}'s symbol - '{player_1_symbol_f}'. "
                            f"Would you like to change it to something else? Enter Y or N: ")
             if answer == "Y":
-                player_2_symbol_f = input("Choose your own symbol: ")
+                player_2_symbol_f = input("Choose your own symbol (Must be 1 character long): ")
+                while len(player_2_symbol_f) != 1:
+                    player_2_symbol_f = input("Symbol must be 1 character long: ")
             elif answer == "N":
                 print("Continuing with your current symbol.")
                 break
