@@ -64,7 +64,7 @@ while True:
     gameplay()
     answer = input("Would you like to play again? (Y/N): ").upper()
     while answer not in ["Y", "N"]:
-        answer = input("Invalid answer. Would you like to play again? (Y/N): ")
+        answer = input("Invalid answer. Would you like to play again? (Y/N): ").upper()
     if answer == "Y":
         continue
     print("Game Over.")
