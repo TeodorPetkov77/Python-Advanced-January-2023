@@ -31,7 +31,7 @@ def define_rules():
             list_length_f = int(input("Въведи дължината на листа: "))
             break
         except ValueError:
-            print("Число, човече...")
+            print("Число човече...")
             continue
 
     while True:
