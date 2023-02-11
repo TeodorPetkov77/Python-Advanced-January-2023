@@ -37,7 +37,7 @@ def define_rules():
     while True:
         auto_mode_f = input("Искаш ли да играеш с автоматичен режим? (Y/N): ").upper()
         if auto_mode_f not in ["Y", "N"]:
-            print(f"Ще ти дам едно {auto_mode_f}. Само Y или N...")
+            print(f"Ще ти дам едно '{auto_mode_f}'. Само Y или N...")
             continue
         break
     if auto_mode_f == "Y":
