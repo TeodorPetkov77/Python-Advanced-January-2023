@@ -64,9 +64,9 @@ while True:
     game_list = list(range(1, list_length + 1))
     random.shuffle(game_list)
     gameplay()
-    answer = input("Играе ли ти се отново тази невероятно сложна игра? (Y/N): ").upper()
+    answer = input("Играе ли ти се пак? (Y/N): ").upper()
     while answer not in ["Y", "N"]:
-        answer = input("Само 'Y' или 'N' бе човек... (Y/N): ").upper()
+        answer = input("Не ме нервирай... Играе ли ти се пак? (Y/N): ").upper()
     if answer == "Y":
         continue
     print("Край на играта.")
