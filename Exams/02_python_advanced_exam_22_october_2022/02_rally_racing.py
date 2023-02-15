@@ -1,7 +1,7 @@
 n = int(input())
 car = input()
-car_pos = [0, 0]
 matrix = []
+car_pos = [0, 0]
 tunnel_exit = [0, 0]
 distance = 0
 
