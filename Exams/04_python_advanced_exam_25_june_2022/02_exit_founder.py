@@ -2,8 +2,7 @@ from collections import deque
 
 
 def convert_pos(pos_string):
-    pos_f = [int(pos_string[1]), int(pos_string[4])]
-    return pos_f
+    return [int(pos_string[1]), int(pos_string[4])]
 
 
 def next_player():
@@ -11,7 +10,7 @@ def next_player():
 
 
 def create_matrix():
-    matrix_f = [input().split() for x in range(6)]
+    matrix_f = [input().split() for _ in range(6)]
     return matrix_f
 
 
