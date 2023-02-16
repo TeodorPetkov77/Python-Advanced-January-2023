@@ -2,8 +2,7 @@ from collections import deque
 
 
 def convert_pos(pos_string):
-    pos_f = [0, 0]
-    pos_f[0], pos_f[1] = int(pos_string[1]), int(pos_string[4])
+    pos_f = [int(pos_string[1]), int(pos_string[4])]
     return pos_f
 
 
